@@ -48,9 +48,10 @@ Loaded on demand for edge cases in video curation — guidance on handling spons
 | `notebooklm-py` | Google NotebookLM CLI access | `pip install notebooklm-py` |
 | `playwright` | Browser automation (required by notebooklm-py) | `pip install playwright && playwright install chromium` |
 
-After installing `notebooklm-py`, authenticate once:
+After installing `notebooklm-py`, install the Claude skill and authenticate:
 
 ```bash
+notebooklm skill install  # Installs the NotebookLM Claude skill
 notebooklm login          # Opens browser for Google OAuth
 notebooklm status         # Verify authentication
 ```
